@@ -3,33 +3,29 @@
 }
 
 body{
-  width: 95%;
-  height:85%;
-
-  margin: 1% auto;
-  border-width:20px;
-
-  color: #506AD4;
-  font-family: sans-serif;
+  font-family: 'Open Sans Condensed' ;
+  min-height:100vh;
   background-color : ghostwhite;
+  border-color: #F9ED32;
+  border-width:10px;
+  border-style: outset;
 }
-body , aside {
+.wrap , aside {
   border-style: inset;
 }
-/* index file  */
-
+.wrap{
+  display: "flex";
+  margin: 0 auto;
+  padding: 0 auto;
+  width: 95%;
+  max-height:85%;
+  border-width:20px;
+  color: #506AD4;
+  font-family: sans-serif;
+}
 header{
   margin-right:20%
-  font-family: Helvetica, Verdana, Arial, sans-serif;
-}
-.connect img{
-  width : 400px ;
-  height : 300px;
-}
-.connectPhoto{
-  width: 20%;
-  height: 20%;
-  padding: inherit;
+
 }
 nav ul  ,footer ul {
   display: flex;
@@ -42,15 +38,9 @@ nav ul li{
   width: auto;
   height: inherit;
 }
-
-
-.wrap{
-  display: "flex";
-  margin :1% auto;
-  padding-left: 5px 10px;
-}
 h1{
-  font-family: "Sofia";
+  font-family: "Poiret One";
+  padding-left: 20%;
 }
 li, a{
   text-decoration: none;
@@ -63,6 +53,22 @@ li{
   padding: 10px;
   justify-content: center;
   text-decoration: none;
+}
+
+/* index file  */
+
+.connect img{
+  width : 400px ;
+  height : 300px;
+}
+.connectPhoto{
+  width: 20%;
+  height: 20%;
+  padding: inherit;
+}
+
+.experience{
+  text-align: center;
 }
 footer ul li img{
   width: 25px;
@@ -95,18 +101,22 @@ aside img, .portfolio{
     border-style: outset;
 }
 /*----------------------------------------------------- CV file */
-h2{
+.commentaire {
   color: black;
   text-align: center;
 }
 .formation{
-  width: 90%;
-  margin: 5px auto;
+  width: 65%;
+  height: 10%;
+  margin: 0 auto;
+  padding: 1%;;
 }
+
 .formation , .centrInterest{
   background-color: #C3B2AF;
-
-  padding: 3%;
+}
+.centrInterest{
+    padding: 3%;
 }
 .centrInterest , .hobby , .livre, .formation, .competence, .lien{
   border: 1px solid black;
@@ -116,6 +126,7 @@ h2{
   display: flex;
   justify-content: space-between;
   width: 95%;
+  height: 40%;
   margin: 0 auto;
   padding: 3%;
   background-color: #F9ED32;
@@ -218,16 +229,14 @@ font-family:
   background-color: ;
 }
 .centrInterest img{
-
-  margin-left: 15%;
+  margin-left: 13%;
  text-align: center;
-  width: 230px;
-  height: 130px;
+  width: 220px;
+  height: 120px;
 }
 
 .hobby{
   width: 45%;
-  
 }
 .hobby img{
   margin 0 auto;
@@ -235,7 +244,7 @@ font-family:
   height: 80px;
 }
 .livre img{
-  width: 260px;
+  width: 240px;
   height: 60%;
 }
  .basAb{
@@ -243,14 +252,15 @@ font-family:
   position: absolute
   left: 15%;
 }
-.wrap{
-    margin: 0 auto;
-    padding: 0 auto;
+.centrInterest , .hobby , .lien{
+  margin-right: 1%;
+
 }
 
 
+/* --------------------------------------------------------------------- */
 /*------------------------ Media queries ---------------------------------*/
-
+/* ------------------------------------------------------------------------- */
 
 /* ------------------Smart phone------------------------- */
 

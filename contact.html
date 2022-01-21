@@ -32,13 +32,13 @@
               <fieldset>
                 <div class="civilite">
                 <div >
-                    <h2>Civilité</h2>
+                    <h2 class="commentaire">Civilité</h2>
                     <label for="Mr">Mr.  </label><input type="radio" name="civilite" value="Mr" />
                     <label for="Mme">M<sup>me</sup>  </label><input type="radio" name="civilite" value="Mme" />
                     <label for="Mlle">M<sup>lle</sup> </label><input type="radio" name="civilite" value="Mlle" />
                 </div>
                 <div>
-                  <h2>Identité</h2>
+                  <h2 class="commentaire">Identité</h2>
                   <label for="Nom">Nom : </label><input type="text" name="nom" id="nom" placeholder="Ex: Martin" size="30" maxlength="10" />
                   <label for="Prenom">Prénom : </label><input type="text" name="prenom" id="prenom" placeholder="Ex: Simon-Pierre" size="30" maxlength="10" />
                   <label>Télépone : </label><input type="tel" name="telephone" id="telephone" pattern="[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}" placeholder="Ex : 00 00 00 00 00 "   required>
@@ -46,14 +46,14 @@
               </div>
               </fieldset>
               <fieldset class="conectAct">
-                   <h3>Connexion</h3>
+                   <h3 class="commentaire">Connexion</h3>
                    <label for="email">Email : </label>
                    <input type="email" name="connexion" value="email" />
                    <label for="pw">Mot de passe : </label>
                    <input type="password" name="connexion" value="pw" />
 
 
-                <h3>Activité</h3>
+                <h3 class="commentaire">Activité</h3>
                 <div class="choixAct">
                     <div class="teamTechnol">
                         <div class="team">
@@ -101,8 +101,8 @@
                     </div>
 
                   </div>
-                  <h3>Détails de l'objet de la prise de contact :</h>
-                     <label for="commentaire">Rédigez en quelques mot votre message </label><br>
+                  <h3 class="commentaire">Détails de l'objet de la prise de contact :</h>
+                     <label for="commentaire" class="commentaire">Rédigez en quelques mot votre message </label><br>
                      <textarea name="commentaire" id="message" rows="5" cols="25"></textarea>
                   <div  class="button">
                    <button color="blue" type="submit">VALIDER</button>
