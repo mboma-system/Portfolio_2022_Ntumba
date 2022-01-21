@@ -30,7 +30,6 @@
             <form class="" action="index.html" method="post">
 
               <fieldset>
-
                 <div class="civilite">
                 <div >
                     <h2>Civilité</h2>
@@ -46,33 +45,39 @@
                 </div>
               </div>
               </fieldset>
-              <fieldset>
+              <fieldset class="conectAct">
                    <h3>Connexion</h3>
                    <label for="email">Email : </label>
                    <input type="email" name="connexion" value="email" />
                    <label for="pw">Mot de passe : </label>
                    <input type="password" name="connexion" value="pw" />
 
-                   <h3>Activité</h3>
-                   <div class="choixAct">
-                    <div class="">
-                      <label for="equipe">Equipe </label>
-                      <select name="equipe" id="equipe">
-                        <option value="developpement">developpement</option>
-                        <option value="DevOps">DevOps</option>
-                        <option value="SystemeReseau">Système et réseaux</option>
-                      </select>
+
+                <h3>Activité</h3>
+                <div class="choixAct">
+                    <div class="teamTechnol">
+                        <div class="team">
+                          <label for="equipe">Equipe </label>
+                          <select name="equipe" id="equipe">
+                            <option value="developpement">developpement</option>
+                            <option value="DevOps">DevOps</option>
+                            <option value="SystemeReseau">Système et réseaux</option>
+                          </select>
+                        </div>
+
+                        <div class="technol">
+                          <label for="Technology">Information Technology </label><select name="Technology" id="Technology">
+                              <option value="FrontEnd"> Front-end</option>
+                              <option value="Back-end"> Back-end</option>
+                              <option value="Infrastructure"> Infrastructure</option>
+                              <option value="DevOps"> DevOps</option>
+                              <option value="SystemeReseau"> Système et réseaux</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="">
-                      <label for="Technology">Information Technology </label><select name="Technology" id="Technology">
-                          <option value="FrontEnd"> Front-end</option>
-                          <option value="Back-end"> Back-end</option>
-                          <option value="Infrastructure"> Infrastructure</option>
-                          <option value="DevOps"> DevOps</option>
-                          <option value="SystemeReseau"> Système et réseaux</option>
-                        </select>
-                      </div>
-                      <div class="">
+
+                    <div class="condProjOther">
+                      <div class="condProj">
                         <label for="ConduiteProjet"> Conduite de projet </label>
                         <select name="ConduiteProjet" id="ConduiteProjet">
                             <option value="Managment"> Manager</option>
@@ -82,7 +87,7 @@
                             <option value="testeur"> Testeur</option>
                         </select>
                       </div>
-                      <div class="">
+                      <div class="other">
                         <label for="autre">Autre </label>
                         <select name="autre" id="autre">
                             <option value="etudiant"> Etudiant</option>
@@ -92,10 +97,13 @@
                             <option value="entrepreneur"> Entrepreneur</option>
                         </select>
                       </div>
+
+                    </div>
+
                   </div>
                   <h3>Détails de l'objet de la prise de contact :</h>
                      <label for="commentaire">Rédigez en quelques mot votre message </label><br>
-                     <textarea name="commentaire" id="message" rows="10" cols="50"></textarea>
+                     <textarea name="commentaire" id="message" rows="5" cols="25"></textarea>
                   <div  class="button">
                    <button color="blue" type="submit">VALIDER</button>
                   </div>
