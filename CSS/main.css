@@ -1,0 +1,223 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  width: 90%;
+  height:65%;
+
+  margin: 1% auto;
+  border-width:20px;
+
+  color: #506AD4;
+  font-family: sans-serif;
+  background-color : ghostwhite;
+}
+body , aside {
+  border-style: inset;
+}
+/* index file  */
+
+header{
+  margin-right:20%;
+  font-family: Helvetica, Verdana, Arial, sans-serif;
+}
+.connect img{
+  width : 400px ;
+  height : 300px;
+}
+.connectPhoto{
+  width: 20%;
+  height: 20%;
+  padding: inherit;
+}
+nav ul  ,footer ul {
+  display: flex;
+  justify-content: space-around;
+  margin:10px;
+  padding: 3px;
+  width: auto;
+}
+nav ul li{
+  width: auto;
+  height: inherit;
+}
+
+
+.wrap{
+  display: "flex";
+  margin :0 auto;
+  padding-left: 20px;
+}
+h1{
+  font-family: "Sofia";
+}
+li, a{
+  text-decoration: none;
+}
+li{
+  font-family: "Indie Flower";
+  border:3px solid black;
+  width: 220px;
+  height: 55px;
+  padding: 10px;
+  justify-content: center;
+  text-decoration: none;
+}
+footer ul li img{
+  width: 25px;
+  height: 25px;
+}
+footer ul li {
+  font-size:15px;
+  text-decoration: none;
+  width: auto;
+  height: auto;
+}
+ul li{
+  list-style: none;
+}
+li{
+  text-decoration: none
+}
+
+aside img{
+  margin: 1px auto;
+  padding: 7px;
+  width: 60%;
+  height:90%;
+
+  border-size : 10px;
+
+}
+aside img, .portfolio{
+    border-size : 10px;
+    border-style: outset;
+}
+/* CV file */
+h2{
+  color: black;
+}
+.bas{
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: blue;
+
+}
+.bas_f{
+  border: 1px solid black;
+  width: 33%;
+  padding: 5px;
+}
+.formation{
+  background-color: #C3B2AF;
+}
+.competence{
+  background-color: #B0BAC3;
+}
+.lien{
+  background-color: #7C838A;
+}
+
+aside{
+  display : flex;
+  justify-content: space-between;
+  width: 80%;
+  height:90%;
+  margin: 2% 75% 2% 3%;
+}
+aside .portfolio{
+  width: 500px;
+}
+.cursus{
+  width: 80px;
+  height: 240px;
+}
+.cursus li{
+  width: 450px;
+  height: 60px;
+}
+.comment{
+  margin-left: 10px;
+}
+
+
+figure{
+  display : flex;
+  justify-content: space-around;
+}
+.table1, .table2{
+  order : 1 ;
+  width : 40%;
+  height : 25%;
+  cellspacing : 0;
+  cellpading : 6;
+  border-collapse : collapse;
+  border: 1px solid black;
+}
+.titleName, .maritalStatus, .titleFirstName, .nbrechild,.myPlace, .PostalCode, .myCity{
+  width :15%;
+  bgcolor : blue;
+  align : right;
+  border : 1px solid black;
+  font color: white;
+}
+.myName, .maritalStatusId, .myFirstName, .nbrechildId, .myPlaceId, .PostalCodeId,.myCityId{
+  width : 15%;
+  align : left;
+  border : 1px solid black;
+  font color : black;
+}
+.loisirs{
+  display : flex;
+  justify-content : space-between;
+}
+
+/* contact file */
+form{
+  text-align: center;
+}
+article{
+padding: 1%;
+}
+fieldset{
+  margin: 1% auto;
+  background-color: #B0BAC3;
+  width : 98%;
+  justify-content: space-between;
+  border :1px dotted black;
+  border-radius:5px;
+}
+.choixAct{
+  display: flex;
+  justify-content: space-between;
+}
+
+.civilite{
+  display : flex;
+  justify-content : space-around;
+}
+button{
+font-family:
+}
+/* About file */
+.lien img{
+  width: 260px;
+  height: 60%;
+}
+ .basAb{
+  height: 400px;
+  position: absolute
+  left: 15%;
+}
+.wrap{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+
+/*------------------------ Media queries */
