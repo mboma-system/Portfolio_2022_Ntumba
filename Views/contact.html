@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>Simon Pierre - Portfolio|contact</title>
+        <title>Simon Pierre - Portfolio | contact</title>
         <link rel="stylesheet" href="../css/main.css">
         <link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet">
     </head>
@@ -20,9 +20,12 @@
             <h1>STAY IN TOUCH</h1>
           </header>
           <aside class=" connect">
-            <picture>
+            <picture class="portrait">
                 <img src="../img/env.jpg" alt="gare Lille Europe" >
             </picture>
+            <div class="portfolio">
+                  <img src="../img/stayIn_touch.jpg" title="ET" alt="Affiche film ET"></a>
+            </div>
 
           </aside>
         </div>
@@ -33,19 +36,19 @@
 
             <form class="" action="#" method="post">
 
-              <fieldset>
+              <fieldset class="underFieldStatusUnderFieldIdentity">
                 <div class="civilite">
-                    <div >
+                    <div class="underFieldStatus" >
                       <h2 class="commentaire">Status</h2>
                       <label for="Mr">Sir  </label><input type="radio" name="civilite" value="Mr" />
                       <label for="Mme">Mrs </label><input type="radio" name="civilite" value="Mme" />
                       <label for="Mlle">Miss </sup> </label><input type="radio" name="civilite" value="Mlle" />
                     </div>
-                    <div>
+                    <div class="underFieldIdentity">
                       <h2 class="commentaire">Identity</h2>
-                      <label for="Nom">Name : </label><input type="text" name="nom" id="nom" placeholder="Ex: Martin" size="30" maxlength="10" />
-                      <label for="Prenom">Firstname : </label><input type="text" name="prenom" id="prenom" placeholder="Ex: Simon-Pierre" size="30" maxlength="10" />
-                      <label>Phone number : </label><input type="tel" name="telephone" id="telephone" pattern="[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}" placeholder="Ex : 07 52 88 25 70 "   required>
+                      <label for="Nom">Name : </label><input type="text" name="nom" id="nom" placeholder="Ex: Martin" size="10" maxlength="10" />
+                      <label for="Prenom">Firstname : </label><input type="text" name="prenom" id="prenom" placeholder="Simon-Pierre" size="12" maxlength="10" />
+                      <label>Phone number : </label><input type="tel" name="telephone" id="telephone" pattern="[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}" placeholder="07 52 88 25 70 "  size="10" maxlength="14"   required>
                     </div>
                 </div>
               </fieldset>

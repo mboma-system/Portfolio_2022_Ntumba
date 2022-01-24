@@ -1,9 +1,12 @@
 *{
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
+}
+html {
+	font-size: 100%;
 }
 
 body{
-
+  font-size: 0.7rem;
   font-family: 'Open Sans Condensed' ;
   min-height:100vh;
   background-color:#FFFCE6 ;
@@ -14,6 +17,7 @@ body{
 body , ul li{
   background-color : ghostwhite;
 }
+
 .wrap , aside {
   border-style: inset;
 }
@@ -28,8 +32,8 @@ body , ul li{
   border-width:20px;
   color: #506AD4;
   font-family: sans-serif;
-  /* background-color:#FFFCE6 ; */
-  background-image: url("../img/rachmaninof.jpg");
+   background-color:#FFFCE6 ;
+  background-image: url("../img/hat.JPG" alt=" author");
   background-repeat:no-repeat;
   background-size: cover;
 }
@@ -59,13 +63,18 @@ li{
   justify-content: center;
   text-decoration: none;
 }
+footer ul li{
+  font-size: 0.7em;
+}
 
 footer ul li img{
   width: 25px;
   height: 25px;
 }
+nav ul{
+  font-size:0.6em;
+}
 nav ul ,footer ul li {
-  font-size:15px;
   text-decoration: none;
   width: auto;
   height: auto;
@@ -98,14 +107,15 @@ aside img, .portfolio{
 
 /* index file  */
 .bgImag{
-  background-image: url("../img/rachmaninof.jpg");
+  background-image: url("../img/hat.JPG");
+  "../img/hat.JPG" alt=" author"
   background-repeat:no-repeat;
   background-size: cover;
 }
  .dash{
-  background-image: url("../img/rachmaninof.jpg");
+  /* background-image: url("../img/rachmaninof.jpg");
   background-repeat:no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
 .introduction{
   text-align: center;
@@ -293,8 +303,28 @@ font-family:
 /* --------------------------------------------------------------------- */
 /*------------------------ Media queries ---------------------------------*/
 /* ------------------------------------------------------------------------- */
+@media (min-width: 380px) {
+  html {
+  	font-size: 150%;
+  }
+}
+
+@media (max-width: 380px) {
+
+        .wrap{
+          min-height:calc(100vh - 124px);
+          background-color:#FFFCE6 ;
+
+        }
+    }
 
 /* ------------------Smart phone------------------------- */
+
+@media (max-width: 438px) {
+        .connect img{
+        display: none;
+        }
+    }
 
 @media(max-width: 544px){
    .connectAct{
@@ -325,6 +355,15 @@ font-family:
     height: 200px;
   }
 }
+
+/* ------------------------------Sticking wrapper---------------- */
+@media (min-width: 620px) {
+        .wrap{
+          min-height:calc(100vh - 65px);
+        }
+  }
+
+
 @media(max-width: 665px){
    .foot{
     display: flex;
@@ -346,12 +385,16 @@ font-family:
   }
 }
 
+
 @media(max-width: 1011px){
        .bas{
         display: flex;
         /* flex-direction: column; */
         /* justify-content: space-between;*/
         flex-wrap: wrap;
+      }
+      .portrait{
+        display: none;
       }
       .centrInterest , .hobby , .livre{
         max-width: 45%;
@@ -371,6 +414,12 @@ font-family:
 /* ########################   LARGE DESKTOPS   ######################### ##*/
 /* ####################################################################### */
 /*1010px and up*/
+
+@media (min-width: 1025px) {
+  html {
+  	font-size: 200%;
+  }
+}
 @media screen and (min-width: 1140px) {
 
 .wrapper {
