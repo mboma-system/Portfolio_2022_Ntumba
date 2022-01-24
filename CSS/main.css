@@ -1,11 +1,12 @@
 *{
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 body{
+
   font-family: 'Open Sans Condensed' ;
   min-height:100vh;
-
+  background-color:#FFFCE6 ;
   border-color: #FFFCE6 ;
   border-width:10px;
   border-style: outset;
@@ -16,7 +17,9 @@ body , ul li{
 .wrap , aside {
   border-style: inset;
 }
+
 .wrap{
+  box-sizing: border-box;
   display: "flex";
   margin: 0 auto;
   padding: 0 auto;
@@ -25,7 +28,10 @@ body , ul li{
   border-width:20px;
   color: #506AD4;
   font-family: sans-serif;
-  background-color:#FFFCE6 ;
+  /* background-color:#FFFCE6 ; */
+  background-image: url("../img/rachmaninof.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
 }
 
 
@@ -91,6 +97,16 @@ aside img, .portfolio{
 }
 
 /* index file  */
+.bgImag{
+  background-image: url("../img/rachmaninof.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+ .dash{
+  background-image: url("../img/rachmaninof.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+}
 .introduction{
   text-align: center;
   margin: 0 auto;
